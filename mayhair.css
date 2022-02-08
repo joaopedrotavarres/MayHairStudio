@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+/*Colors Marrom escuro #522806
+         Marrom claro  #ebb98b
+         Branco      #fad7b6cc*/
+/*A partir é o Header*/
+.FundoHeader {
+    background-color: #ebb98b;
+    width: 100%;
+    height: 150px;
+    position: static;
+    border-bottom: solid rgba(253, 253, 253, 0.753) 1px;
+}
+.Logo1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10%;
+    margin-top: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+.Logo2{
+    color: white;
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 10%;
+    margin-top: 72px;
+    position: absolute;
+    cursor: pointer;
+}
+.Instagram,img{
+    height: 30px;
+    width: 30px;
+    margin-left: 75%;
+    margin-top: 5.3%;
+    position: absolute;
+    
+
+}
+.Email,img{
+    width: 30px;
+    height: 30px;
+    margin-left: 78%;
+    margin-top: 5.3%;
+    position: absolute;
+}
+.WhatsApp,img{
+    width: 30px;
+    height: 30px;
+    margin-left: 81%;
+    margin-top: 5.3%;
+    position: absolute;
+}
+.Facebook,img{
+    width: 30px;
+    height: 30px;
+    margin-left: 84%;
+    margin-top: 5.3%;
+    position: absolute;
+}
+
+/* A partir daqui é o Body */
+
+.Body1 {
+    background-color:  #fad7b6;
+    opacity: 0.9;
+    width: 100%;
+    height: 400px;
+    position: static;
+    border-bottom: solid white 1px;
+    
+}
+/*Inicio Slide 1*/
+.container1{
+    position:absolute;
+    opacity: 0.6;
+}
+
+.container1 img{
+    position: absolute;
+    transition: 1s;
+    height: 400px;
+    width: 1360px;
+
+}
+.bullets1{
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    left:36.5%;
+    top: 500px;
+
+}
+.bullet-single1{
+    margin:0 8px;
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ebb98b;
+    display: center;
+    
+}
+.active-bullet1{
+    background-color: white;
+}
+/*Final Slide 1*/
+/* A partir daqui é o Body 2*/
+.Body2 {
+    background-color:  #ebb98b;
+    width: 100%;
+    height: 500px;
+    position: static;
+    /*border-bottom: solid white 1px;*/
+}
+.TitleLocalizacao{
+    color: white;
+    margin-left: 43%;
+    margin-top: 20px;
+    position: absolute;
+    opacity: 0;
+}
+.NossoSalao{
+    margin-left: 62%;
+    margin-top: 5%;
+    position: absolute;
+}
+.TxtSalao{
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium';
+    margin-left: 73.4%;
+    margin-top: 2.5%;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+}
+/*Slider de fotos 2*/
+.container2{
+    position:absolute;
+    height: 400px;
+    margin-left: -190%;
+    margin-top: 0%;
+
+}
+.container2 img{
+    position: absolute;
+    height: 400px;
+    left:0;
+    top: 0;
+    width: 400px;
+    opacity: 0;
+    transition: 1000ms;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.bullets2{
+    text-align: center;
+    position: absolute;
+    width: 300px;
+    margin-top: 360px;
+    margin-left: 47px;
+}
+.bullet-single2{
+    margin:0 8px;
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ebb98b;
+}
+.active-bullet2{
+    background-color: white;
+}
+/*FinalSlide2*/        
+.Endereco{
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium';
+    margin-left: 17.5%;
+    margin-top: 2.5%;
+    position: absolute;
+    cursor: pointer;
+}
+/*.Local{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 3%;
+    margin-top: 4.5%;
+    position: absolute;
+}
+*/
+.MapaApi{
+    position: absolute;
+    margin-top: 4.8%;
+    margin-left: 6%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* A partir daqui é o Footer*/
+.FundoFooter {
+    background-color:  #fad7b6;
+    width: 100%;
+    height: 50px;
+    position: static;
+}
+.Politica,h1{
+    font-size: 16px;
+    margin-left: 15%;
+    margin-top: 1.5%;
+    position: absolute;
+    cursor: pointer;
+    color: #522806;
+    font-family:'Franklin Gothic Medium'
+}
+.CopyRight,h1{
+    font-size: 11px;
+    /*border: solid white 1px;*/
+    margin-left: 35%;
+    margin-top: 1.8%;
+    position: absolute;
+    color: #522806;
+    font-family:'Franklin Gothic Medium'}
+
+.Politica2,h1{
+    font-size: 16px;
+    margin-left: 71%;
+    position: absolute;
+    margin-top: 0.9%;
+    cursor: pointer;
+    color: #522806;
+    font-family:'Franklin Gothic Medium'}
+.Profissionais{
+    font-size: 16px;
+    margin-left: 73.4%;
+    margin-top: 1.9% ;
+    position: absolute;
+    cursor: pointer;
+    color: #522806;
+    font-family:'Franklin Gothic Medium'}
