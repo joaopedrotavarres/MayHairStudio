@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mayhair.css">
+    <title>MayHairStudio.com</title>
+</head>
+<body>
+    <div class="Header">
+        <div class="FundoHeader">
+            <div class="LogoSalao">
+                <id class="Logo1">MayHair Beauty</id>
+                <id class="Logo2">Por Marcely Lopes</id>
+            </div>
+            <div class="ComponentsHeader">
+                <!--Img de redes sociais!-->
+                <div class="Instagram">
+                  <img src="linkedin.png"></div>
+                <div class="Facebook">
+                    <img src="face.img.jp"></div>
+                <div class="Email">
+                    <img src="email.img.jp"></div>
+                <div class="WhatsApp">
+                    <img src="wpp.img.jp"></div>  
+            </div>
+        </div>
+    </div>
+    <div class="BodySite">
+        <div class="FundoBody">
+            <div class="Body1">
+                <!--Primeira Parte do Site a partir de (Final do header até inicio de Localização)-->
+                <!--Inicio marcação Slide 1-->
+                <div class="container1">
+                    <img src="3.img.jpg"/>
+                    <img src="2.img.jpg"/>
+                    <img src="5.img.jpg"/>
+                </div>
+                <div class="bullets1">
+                    <div class="bullet-single1 active-bullet1"></div>
+                    <div class="bullet-single1"></div>
+                    <div class="bullet-single1"></div>
+                </div>
+            <!--Final marcação Slide 1-->
+            </div>
+            <div class="Body2">
+                <!--Segunda Parte do Site a partir de final de (Slide de imagens até inicio de footer) -->
+                <h2 class="TitleLocalizacao">Localização</h2>
+                    <div class="MapaApi">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d919.3664698963885!2d-43.04631909914911!3d-22.822247101669113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x999b5cba50fec9%3A0xc4ebc6255ea62993!2sPartage%20S%C3%A3o%20Gon%C3%A7alo%20Geral%20Centro!5e0!3m2!1spt-BR!2sbr!4v1642119826601!5m2!1spt-BR!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <id class="Endereco">Endereço</id>
+                    <!--<id class="Local">Av.Pres.Kennedy, 429 - Centro, São Gonçalo - RJ</id>-->
+                    <div class="NossoSalao"> 
+                        <!--Inicio marcação Slide 2-->
+                            <div class="container2">
+                                <img style="opacity: 1;" src="0.img.jpg"/>
+                                <img src="1.img.jpg"/>
+                                
+                                <img src="2.img.jpg"/>
+                                <img src="3.img.jpg"/>
+                                <img src="4.img.jpg"/>
+                                <img src="5.img.jpg"/>
+                            </div>
+                            <div class="bullets2">
+                                <div class="bullet-single2 active-bullet2"></div>
+                                <div class="bullet-single2"></div>
+                                <div class="bullet-single2"></div>
+                                <div class="bullet-single2"></div>
+                                <div class="bullet-single2"></div>
+                                <div class="bullet-single2"></div>
+                            </div>
+                
+                        <!--Final marcação Slide 2-->
+                    </div>
+                    <id class="TxtSalao">Nosso Salão</id>
+                    <div class="SlideBody">
+                        <div class="SlideBodyFunction"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="Footer">
+        <div class="FundoFooter">
+            <id class ="Politica">Politica de Privacidade</id>
+            <id class = "Politica2">Politica de Privacidade</id>
+            <id class = "Profissionais">Profissionais</id>
+            <id class = "CopyRight">Copyright 2022 - MayHair Studio | Marcely Lopes - Todos Direitos Reservados.</id>
+
+        </div>
+    </div>
+
+    <script>
+        //Inicio Script Slide 1
+        var lastIndex =0;
+
+        var images = document.querySelectorAll('.container1 img');
+         
+        images.forEach((item,index)=>{
+            document.querySelectorAll('.bullet-single1')[index]
+            .addEventListener('click',()=>{
+                let lastImage = document.querySelectorAll('.container1 img')[lastIndex];
+                let actualImage = document.querySelectorAll('.container1 img')[index];
+                
+                //Resetar as Bullets e setar a nova com base na imagem.
+                
+                document.querySelectorAll('.bullet-single1')[lastIndex]
+                .classList.remove('active-bullet1');
+
+                ;
+                document.querySelectorAll('.bullet-single1')[index]
+                .classList.add('active-bullet1');
+                
+                lastImage.style.opacity = 0;
+                actualImage.style.opacity = 1;
+
+                lastIndex = index;
+            })
+
+        })
+        //Final Script 1
+        </script>
+    <script>
+        //Inicio Script Slide 2
+        var lastIndex =0;
+
+        var images = document.querySelectorAll('.container2 img');
+         
+        images.forEach((item,index)=>{
+            document.querySelectorAll('.bullet-single2')[index]
+            .addEventListener('click',()=>{
+                let lastImage = document.querySelectorAll('.container2 img')[lastIndex];
+                let actualImage = document.querySelectorAll('.container2 img')[index];
+                
+                //Resetar as Bullets e setar a nova com base na imagem.
+                
+                document.querySelectorAll('.bullet-single2')[lastIndex]
+                .classList.remove('active-bullet2');
+
+                ;
+                document.querySelectorAll('.bullet-single2')[index]
+                .classList.add('active-bullet2');
+                
+                lastImage.style.opacity = 0;
+                actualImage.style.opacity = 1;
+
+                lastIndex = index;
+            })
+        })
+        //Final Script Slide 2
+    </script>
+</body>
+</html>
